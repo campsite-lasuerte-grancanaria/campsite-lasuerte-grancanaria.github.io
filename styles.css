@@ -1,0 +1,511 @@
+/* general */
+
+@font-face {
+    font-family: "SummerCentury";
+    src: url('SummerCentury-DYA91.otf');
+}
+
+body {
+    background-color: hsl(35, 50%, 80%);
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/* header */
+
+header {
+    height: 3.5rem;
+    position:fixed;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-color: hsl(35, 50%, 90%);
+}
+
+
+/* title */
+
+#title {
+    text-align: center;
+}
+
+#title-img {
+    width: 100%;
+}
+
+#accommodations {
+    margin-top: 3rem;
+}
+
+.accommodationOptions {
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.accommodationChoice {
+    width: 17vw;
+    height: 17vw;
+    font-size: 2rem;
+}
+
+.buttonarea {
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.buttonarea :hover {
+    cursor: pointer;
+}
+
+.textbox {
+    background-color: hsla(0, 0%, 100%, 55%);
+    margin-top: 12vw;
+}
+
+#kitchentextbox {
+    background-color: hsla(0, 0%, 100%, 80%);
+}
+
+#busbutton {
+    background-image: url(./images/title/bus.jpg);
+    background-size: cover;
+}
+
+#defenderbutton {
+    background-image: url(./images/title/defender.jpg);
+    background-size: cover;
+}
+
+#studiobutton {
+    background-image: url(./images/title/studio.jpg);
+    background-size: cover;
+}
+
+#tentbutton {
+    background-image: url(./images/title/tent.jpg);
+    background-size: cover;
+}
+
+#spacebutton {
+    background-image: url(./images/title/tentspace.jpg);
+    background-size: cover;
+}
+
+/* text */
+
+h1 {
+    /*font-size: 4rem;*/
+    text-align: center;
+    font-family: 'SummerCentury';
+    letter-spacing: 0.2rem;
+}
+
+h2 {
+    font-family: 'SummerCentury';
+    letter-spacing: 0.2rem;
+    margin-top: 5.5rem;
+}
+
+h3 {
+    margin-top: 3rem;
+}
+
+.smallertext {
+    font-size: small;
+    margin-top: 0;
+}
+
+.biggertext {
+    font-size: x-large;
+    margin-bottom: 0.5rem;
+}
+
+.descriptionbox {
+    text-align: left;
+}
+
+#idolodefirgas {
+    width: 20rem;
+}
+
+#kitchenbutton {
+    background-image: url(./images/title/kitchen.jpg);
+    background-size: cover;
+}
+
+#showerbutton {
+    background-image: url(./images/title/shower.jpg);
+    background-size: cover;
+}
+
+#toiletbutton {
+    background-image: url(./images/title/toilet.jpg);
+    background-size: cover;
+}
+
+
+/* prices */
+
+table {
+    border: 4px ridge hsl(35, 50%, 40%);
+    border-collapse: collapse;
+    margin: 3rem auto;
+}
+
+th {
+    border: 2px solid hsl(35, 50%, 40%);
+    padding: 1rem;
+}
+
+td {
+    border: 2px solid hsl(35, 50%, 40%);
+    padding: 1rem;
+}
+
+#prices {
+    text-align: center;
+}
+
+#includes {
+    display:flex;
+    justify-content: center;
+}
+
+#listbox {
+    text-align: left;
+}
+
+ul {
+    margin-top: 0;
+    font-size: larger;
+    line-height: 1.2;
+}
+
+
+/* booking */
+
+#bookingbutton {
+    font-size: xx-large;
+    padding: 1.5rem;
+    margin: 2rem;
+    background-color: hsl(35, 50%, 68%);
+}
+
+#bookingbutton:hover {
+    cursor: pointer;
+    background-color: hsl(35, 50%, 60%);
+}
+
+/* photo area */
+
+#photoarea {
+    display: flex-wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.photo {
+    width: 20%;
+    margin: 1rem;
+}
+
+#morebox {
+    font-size: xx-large;
+}
+
+#photoshow {
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 6% 88% 6%;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 98%;
+    background-color:hsl(35, 30%, 55%);
+    padding: 1rem;
+    display: none;
+}
+
+#shownphoto {
+    height: 92vh;
+    max-width: 90vw;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+}
+
+#previousphoto {
+    background-image: url(./images/previous.png);
+    background-size: cover;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 3rem;
+    height: 3rem;
+    background-color: hsl(35, 50%, 70%);
+    border-radius: 20%;
+}
+
+#previousphoto:hover {
+    cursor: pointer;
+}
+
+#nextphoto {
+    background-image: url(./images/next.png);
+    background-size: cover;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    width: 3rem;
+    height: 3rem;
+    background-color: hsl(35, 50%, 70%);
+    border-radius: 20%;
+}
+
+#nextphoto:hover {
+    cursor: pointer;
+}
+
+#closebutton {
+    background-image: url(./images/close.png);
+    background-size: cover;
+    align-self: self-start;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    width: 3rem;
+    height: 3rem;
+    background-color: hsl(35, 50%, 70%);
+    border-radius: 20%;
+}
+
+#closebutton:hover {
+    cursor: pointer;
+}
+
+.photo:hover {
+    cursor: pointer;
+}
+
+#gallerytitle {
+    margin-bottom: 0;
+}
+
+
+/* Contact Area */
+
+.contactbox {
+    background-color:  hsl(35, 50%, 85%);
+    width: 17rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+
+@media only screen and (min-width: 1201px) {
+
+    #bigtitle {
+        font-size: 6vw;
+    }
+    
+    #maintitle {
+        font-size: 3vw;
+        position:absolute;
+        top:15%;
+        left:20%;
+        transform: translate(-10%, -40%);
+        letter-spacing: 0.3rem;
+    }
+
+    #closebutton {
+        justify-self: self-end;
+    } 
+
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+    }
+    
+    h4 {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        margin-top: 2rem;
+    }
+    
+    p {
+        font-size: x-large;
+        line-height: 1.5;
+    }
+
+    .smallertext {
+        font-size: large;
+        margin-top: 0;
+    }
+    
+    .biggertext {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    nav > li {
+        font-size: larger;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+
+    nav > li {
+        margin-right: 1.2rem;
+        padding: 0;
+    }
+
+    /* photo sizes */
+    .accommodationChoice {
+        width: 28vw;
+        height: 28vw;
+    }
+    
+    .textbox {
+        margin-top: 20vw;
+    }
+
+    .photo {
+        width: 40%;
+        margin: 1rem;
+    }
+
+    #shownphoto {
+        max-height: 60vw;
+        max-width: 90vw;
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+    }
+
+    .contactbox {
+        width: 12rem;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+}
+
+
+@media only screen and (max-width: 870px) {
+
+    #bigtitle {
+        font-size: 4rem;
+    }
+
+    #maintitle {
+        font-size: 2rem;
+        position:relative;
+        text-align: center;
+        letter-spacing: 0.3rem;
+    }
+
+    /* photo sizes */
+    .accommodationChoice {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .textbox {
+        margin-top: 30vw;
+    }
+
+    #title-img {
+        margin-top: 3rem;
+    }
+    
+}
+
+
+@media only screen and (max-width: 550px) {
+
+    /* photo sizes */
+    .accommodationChoice {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .textbox {
+        margin-top: 60vw;
+    }
+
+    #title-img {
+        margin-top: 5rem;
+    }
+}
+
+
+@media only screen and (max-width: 390px) {
+    .photo {
+        width: 90%;
+        margin: 1rem;
+    }
+}
+
+@media only screen and (min-width: 940px) {
+    nav {
+        display: inline;
+        margin-top: 1rem;
+        float: right;
+        margin-right: 3rem;
+    }
+    
+    nav  > li {
+        display: inline;
+        text-decoration: underline;
+        margin-right: 0;
+        padding: 1rem;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    #menubox {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 939px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        text-align: start;
+        height: 2.5rem;
+        display:grid;
+    }
+
+    #menu-icon {
+        height: 2.5rem;
+        margin-right: 4rem;
+        justify-self: end;
+    }
+
+    #menu-icon:hover {
+        cursor: pointer;
+    }
+
+    #menubox {
+        background-color: hsl(35, 50%, 85%);
+        width: fit-content;
+        list-style-type: none;
+        padding: 1rem;
+        line-height: 2;
+        display: none;
+        justify-self: self-end;
+        margin-right: 3rem;
+    }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>finca la suerte</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <li><a href="#accommodations">Accommodations</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#getthere">How to get there</a></li>
+                <!--li><a href="#area">Area</a></li-->
+                <li><a href="#contact">Contact</a></li>           
+            </nav>
+            <img id="menu-icon" src="./images/menu-icon.png">
+                <div id="menubox">
+                    <li><a href="#accommodations">Accommodations</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#getthere">How to get there</a></li>
+                    <!--li><a href="#area">Area</a></li-->
+                    <li><a href="#contact">Contact</a></li>         
+                </div>
+        </header>
+        <section id="title">
+            <img id="title-img" src="./images/title/1.jpg">
+            <h1 id="maintitle"><span id="bigtitle">Campsite La Suerte</span><br> your camping adventure in the north of Gran Canaria</h1>
+        </section>
+        <section id="accommodations">
+            <h2>Accommodations</h2>
+            <div class="accommodationOptions">
+                <div class="buttonarea">
+                    <a href="bus.html">
+                         <button class="accommodationChoice" id="busbutton"><div class="textbox">Bus</div></button>
+                    </a>
+                </div>   
+                <div class="buttonarea">
+                    <a href="defender.html">
+                         <button class="accommodationChoice" id="defenderbutton"><div class="textbox">Defender</div></button>
+                    </a>
+                </div>   
+                <div class="buttonarea">
+                    <a href="studio.html">
+                        <button class="accommodationChoice" id="studiobutton"><div class="textbox">Studio</div></button>
+                    </a>
+                </div>   
+                <!--div class="buttonarea">
+                    <a href="tent.html">
+                         <button class="accommodationChoice" id="tentbutton"><div class="textbox">Tent</div></button>
+                    </a>
+                </div-->   
+                <div class="buttonarea">
+                    <a href="tentspace.html">
+                        <button class="accommodationChoice" id="spacebutton"><div class="textbox">Tent / Camper Space</div></button>
+                    </a>
+                </div>                 
+            </div>
+        </section>
+        <section id="about">
+            <div></div>
+            <h2>About</h2>
+            <div class="descriptionbox">
+            <p>This unique 8000sqm campsite is located  in the beautiful and wild north of Gran Canaria at a 
+                special place with an interesting <a href="#history">history</a>. It is a quiet place in nature, right
+                above a barranco,  with beautiful views of the ocean, the mountains and the village, 
+                great for hikes, bikes, surfers, climbers but also for writers, painters, other artists, 
+                and families. It's one of the few places on the island where you can sleep in a tent. 
+                Although it's quiet and away from the crowds, the next bus station is only 800m away.
+                Buses to Las Palmas go every 2 hours.<br>
+                The finca has never been connected to the public electricity. In the evening, from 6 pm to 11 pm, 
+                we have electricity from the generator. Once the solar panels are repaired, we will also 
+                have electricity during the day. The nights are calm and peaceful with views of the stars,
+                the village and sometimes ferries on the ocean. Don't forget to bring a headlamp or flashlight, because 
+                there are no lamps at night. <br>
+                An art-in-progress park located in a field by the finca is filled with plants and trees
+                that were waste to others and got a second chance here. The view to the ocean is dominated 
+                by one of the tallest Phoenix Canariensis palm trees on the island.
+            </p>
+            </div>
+            <div class="accommodationOptions">
+                <div class="buttonarea">
+                    <a href="./images/title/kitchen.jpg">
+                         <button class="accommodationChoice" id="kitchenbutton"><div id="kitchentextbox" class="textbox">kitchen</div></button>
+                    </a>
+                </div>   
+                <div class="buttonarea">
+                    <a href="./images/title/shower.jpg">
+                         <button class="accommodationChoice" id="showerbutton"><div class="textbox">shower</div></button>
+                    </a>
+                </div>   
+                <!--div class="buttonarea">
+                    <a href="toilet.html">
+                         <button class="accommodationChoice" id="toiletbutton"><div class="textbox">toilet</div></button>
+                    </a>
+                </div--> 
+            </div>
+        </section>
+        <section id="history">
+            <h2>History</h2>
+            <div class="descriptionbox">
+                <p>
+                    The finca was build about 200 years ago. In the past it  was used for agriculture. Bananas, 
+                    potatoes and many other things have been grown here. For generations, people have inhabited
+                    the caves in the barranco. In the 70s and 80s of the last century, they left them for good. 
+                    The caves are currently closed to the public. <br>
+                    In 2020, a pre-hispanic figurine of a woman with beautiful hair, which was named 'Idolo de 
+                    Firgas' was found at this place. It was donated to the <a 
+                    href="https://www.elmuseocanario.com/un-nuevo-idolo-hallado-en-firgas-se-suma-a-las-colecciones-de-el-museo-canario/"
+                    target="_blank">Museo Canario</a> in Las Palmas for permanent exhibition.
+                </p>
+            </div>
+            <img id="idolodefirgas" alt="Idolo de Firgas, a prehistoric figurine of a woman" src="./images/title/idolo-de-firgas.jpg">
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div id="photoshow">
+                <img id="shownphoto" src="gallery1.jpg">
+                <button id="previousphoto"></button>
+                <button id="nextphoto"></button>
+                <button id="closebutton"></button>
+            </div>
+            <div id="photoarea">
+                <a href="#gallery"><img id="gallery1" class="photo" src="./images/gallery/1.jpg" alt="barranco with palm trees and green plants in it, dry landscape around, and a village in the background"></a>
+                <a href="#gallery"><img id="gallery2" class="photo" src="./images/gallery/2.jpg" alt="sunset behind the campsite"></a>
+                <a href="#gallery"><img id="gallery3" class="photo" src="./images/gallery/3.jpg" alt="2 black and white cats playing with ocean view and a tall palm tree in the background"></a>
+                <a href="#gallery"><img id="gallery4" class="photo" src="./images/gallery/4.jpg" alt="2 dogs playing with a rope"></a>
+                <a href="#gallery"><img id="gallery5" class="photo" src="./images/gallery/5.jpg" alt="red sunset sky behind palm trees"></a>
+                <a href="#gallery"><img id="gallery6" class="photo" src="./images/gallery/6.jpg" alt="a brown and white horse in the sunshine"></a>
+                <a href="#gallery"><img id="gallery7" class="photo" src="./images/gallery/7.jpg" alt="a horse and a small white pony in front of the kitchen building made of wood and glass"></a>
+                <a href="#gallery"><img id="gallery8" class="photo" src="./images/gallery/8.jpg" alt="a breakfast table with a horse in the background"></a>
+                <div id="morebox"><a href="gallery.html">see more</a></div>
+            </div>
+        </section>
+        <section id="getthere">
+            <h2>How to get there</h2>
+            <h3>By Taxi</h3>
+            <p>A taxi from the airport can be organized for guests.</p>
+            <h3>By Bus</h3>
+            <h4>From the Airport</h4>
+            <p>When you come out of the airport, you have to cross the parking space to get to the 
+                bus station. From the southern part of the station, buses go to the south of the 
+                island. From the northern part, they go to the north. From here you take a bus to
+                San Telmo, which is the central bus station of Las Palmas. There are many buses 
+                that go there, for example line 1, 60, or 91. You will probably get a bus within a 
+                couple minutes.
+            </p>
+            <h4>From Las Palmas</h4>
+            <p>From Las Palmas, line 204 goes directly to Casablanca, starting from San Telmo, on 
+                weekdays at 8:30, 10:30, 12:30, 14:30, 15:30, 17:30, 19:30 and 21:30, on saturdays
+                at 8:30, 12:30, 17:30 and 21:30 (updated: November 2025, times might change). On 
+                sundays, there is no direct bus connection, but you can take line 210 or 206 to 
+                Arucas, and from there line 211 to Cambalud (Calle Dolores). From here it's about 20
+                minutes walking, mostly downhill.        
+            </p>
+            </div>
+        </section>
+        <section id="area">
+            <!--h2>What to do in the area</h2-->
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="accommodationOptions" id="contactarea">
+            <div class="contactbox">
+                <img alt="phone" class="logo" src="./images/phone-icon.png">
+                <h4>Phone:</h4>
+                <p>+34 626 914 528</p>
+            </div>
+            <div class="contactbox">
+                <img alt="e-mail" class="logo" src="./images/email-icon.png">
+                <h4>E-Mail:</h4>               
+                <p>xebicha76@gmail.com</p>
+            </div>
+            <div class="contactbox">
+                <img alt="facebook" class="logo" src="./images/facebook-logo.png">
+                <h4>Facebook:</h4>               
+                <a href="https://www.facebook.com/people/Barbora-Xebicha/100014596113268/" target="_blank">     
+                    <p>Barbora Xebicha</p>
+                </a>
+            </div>
+            <div class="contactbox">
+                <img alt="instagram" class="logo" src="./images/instagram-logo.png">
+                <h4>Instagram:</h4>
+                <a href="https://www.instagram.com/xebicha/" target="_blank">                     
+                    <p>Xebicha</p>
+                </a>
+            </div>   
+            </div>
+        </section>
+        <script src="titlescript.js"></script>
+        <script src="galleryscript.js"></script>
+        <script src="menuscript.js"></script>
+    </body>
+</html>
