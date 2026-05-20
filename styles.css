@@ -99,10 +99,14 @@ header {
 /* text */
 
 h1 {
-    /*font-size: 4rem;*/
+    font-size: 4rem;
     text-align: center;
     font-family: 'SummerCentury';
     letter-spacing: 0.2rem;
+}
+
+#bigtitle {
+    font-size: 4.5rem;
 }
 
 h2 {
